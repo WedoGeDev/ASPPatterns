@@ -18,7 +18,7 @@ namespace ASPPatterns.Chap3.Layered.Model
             _sellingPrice = sellingPrice;
         }
 
-        public void SetDiscountStrategy(IDiscountStrategy discountStrategy)
+        public void SetDiscountStrategyTo(IDiscountStrategy discountStrategy)
         {
             _discountStrategy = discountStrategy;
         }

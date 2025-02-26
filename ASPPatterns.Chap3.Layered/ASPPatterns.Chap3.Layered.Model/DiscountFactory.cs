@@ -8,11 +8,11 @@ namespace ASPPatterns.Chap3.Layered.Model
 {
     public static class DiscountFactory
     {
-        public static IDiscountStrategy GetDiscountStrategyFor(CustoperType customerType)
+        public static IDiscountStrategy GetDiscountStrategyFor(CustomerType customerType)
         {
             switch (customerType)
             {
-                case CustoperType.Trade:
+                case CustomerType.Trade:
                     return new TradeDiscountStrategy();
                 default:
                     return new NullDiscountStrategy();
