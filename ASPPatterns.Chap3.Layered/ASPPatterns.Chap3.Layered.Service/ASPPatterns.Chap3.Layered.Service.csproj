@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ProductListRequest.cs" />
+    <Compile Include="ProductListResponse.cs" />
+    <Compile Include="ProductMapperExtensionMethods.cs" />
+    <Compile Include="ProductService.cs" />
+    <Compile Include="ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +57,9 @@
       <Project>{e71dfa44-2eac-4299-ba2f-ec8d9dee6e43}</Project>
       <Name>ASPPatterns.Chap3.Layered.Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

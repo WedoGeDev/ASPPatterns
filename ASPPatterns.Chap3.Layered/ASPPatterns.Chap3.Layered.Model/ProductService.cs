@@ -18,7 +18,9 @@ namespace ASPPatterns.Chap3.Layered.Model
         public IList<Product> GetAllProductsFor(CustomerType customerType)
         {
             var discountEstrategy = DiscountFactory.GetDiscountStrategyFor(customerType);
+
             var products = _productRepository.FindAll();
+            products.Apply(discountEstrategy);
 
             return products;
         }

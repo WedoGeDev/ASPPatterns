@@ -11,6 +11,7 @@ namespace ASPPatterns.Chap3.Layered.WebUI
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            BootStrapper.ConfigureStructureMap();
         }
     }
 }

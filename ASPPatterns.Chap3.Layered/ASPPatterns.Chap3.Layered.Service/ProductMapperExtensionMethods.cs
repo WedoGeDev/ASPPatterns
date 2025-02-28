@@ -27,8 +27,8 @@ namespace ASPPatterns.Chap3.Layered.Service
             {
                 ProductId = product.Id,
                 Name = product.Name,
-                RRP = $"{product.Price.RPP: C}",
-                SellingPrice = $"{product.Price.SellingPrice: C}",
+                RRP = $"{product.Price.RPP:C}",
+                SellingPrice = $"{product.Price.SellingPrice:C}",
                 Discount = product.Price.Discount > 0
                     ? $"{product.Price.Discount}"
                     : string.Empty,
@@ -37,5 +37,5 @@ namespace ASPPatterns.Chap3.Layered.Service
                     : string.Empty
             };
         }
-    }
+    } 
 }
