@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ASPPatterns.Chap4.DomainModel.Model
 {
-    interface IBankAccountRepository
+    public interface IBankAccountRepository
     {
+        void Add(BankAccount bankAccount);
+        void Save(BankAccount bankAccount);
+        IEnumerable<BankAccount> FindAll();
+        BankAccount FindBy(Guid AccountId);
     }
 }
