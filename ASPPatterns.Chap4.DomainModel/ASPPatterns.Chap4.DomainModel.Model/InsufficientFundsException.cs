@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASPPatterns.Chap4.DomainModel.Model
 {
-    public class Class1
+    class InsufficientFundsException: ApplicationException
     {
     }
 }

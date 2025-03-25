@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>e9b5fce8-0e9f-4a5c-bd42-6be6c5113f3f</ProjectGuid>
+    <ProjectGuid>{E9B5FCE8-0E9F-4A5C-BD42-6BE6C5113F3F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ASPPatterns.Chap4.DomainModel.AppService</RootNamespace>
@@ -31,24 +31,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASPPatterns.Chap4.DomainModel.Model\ASPPatterns.Chap4.DomainModel.Model.csproj">
+      <Project>{c1a5792e-24c6-4dbe-ad15-556c43466ffb}</Project>
+      <Name>ASPPatterns.Chap4.DomainModel.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASPPatterns.Chap4.DomainModel.Repository\ASPPatterns.Chap4.DomainModel.Repository.csproj">
+      <Project>{586c0922-1935-4d5e-8409-13e15a9218d7}</Project>
+      <Name>ASPPatterns.Chap4.DomainModel.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
